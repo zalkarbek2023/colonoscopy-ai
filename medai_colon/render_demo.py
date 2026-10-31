@@ -66,7 +66,7 @@ def main():
     tmp = Path(args.out).with_suffix(".raw.mp4")
     writer = cv2.VideoWriter(str(tmp), cv2.VideoWriter_fourcc(*"mp4v"), fps, (W, H))
     f_title, f_big, f_txt, f_small = (ImageFont.truetype(FONT_B, 30), ImageFont.truetype(FONT_B, 64),
-                                      ImageFont.truetype(FONT, 24), ImageFont.truetype(FONT, 19))
+                                      ImageFont.truetype(FONT, 27), ImageFont.truetype(FONT, 22))
 
     hits = deque(maxlen=args.n)
     polyps = []  # {num, first_t, last_t, box, conf}
