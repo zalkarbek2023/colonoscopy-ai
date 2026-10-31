@@ -6,3 +6,7 @@ logs/
 *.pt
 *.engine
 *.onnx
+outputs/
+posts/
+models/
+eval/
