@@ -131,7 +131,7 @@ def main():
             d.text((px + 28, y), f"Polyp #{p['num']} · found at {p['first_t'] - args.start_s:05.1f} s · {state}", font=f_small, fill=WHITE)
             y += 40
         d.text((px, H - 190), "YOLO26m · polyp memory", font=f_small, fill=GREY)
-        d.text((px, H - 160), args.speed_label or f"PyTorch · {np.mean(infer_ms):.0f} ms/frame", font=f_small, fill=GREY)
+        d.text((px, H - 160), f"{args.speed_label or 'PyTorch'} · {np.mean(infer_ms):.0f} ms/frame", font=f_small, fill=GREY)
         d.text((px, H - 110), "Video: REAL-Colon dataset, Biffi et al.,", font=f_small, fill=GREY)
         d.text((px, H - 85), "Sci Data 2024 (CC BY 4.0), held-out", font=f_small, fill=GREY)
         d.text((px, H - 60), "video never seen in training", font=f_small, fill=GREY)
