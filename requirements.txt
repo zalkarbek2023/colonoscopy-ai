@@ -4,3 +4,4 @@ onnx
 onnxslim
 tensorrt-cu13
 nvidia-modelopt[onnx]
+transformers>=5
